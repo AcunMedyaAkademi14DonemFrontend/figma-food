@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+}
+
+header {
+  padding: 28px;
+}
+
+.header-container {
+  align-items: center;
+}
+
+.container {
+  max-width: 1110px;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  
+  /* bu bir nesting yazım biçimi */
+  ul {
+    display: flex;
+    gap: 48px;
+
+    list-style: none;
+  }
+}
+
+.profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  img {
+    border-radius: 50px;
+    /* tam yuvarlak yapmak için 50px (max ölçü) kullanılır */
+  }
+}
+
+.arrow-down {
+  width: 12px;
+}
+
+.hero-container {
+  max-width: 1440px;
+  margin-inline: auto;
+  background-image: url('/assets/img/hero-bg.png');
+  background-repeat: no-repeat;
+
+  text-align: center;
+  padding-block: 259px;
+
+  margin-bottom: 64px;
+
+  h1 {
+    font-size: 80px;
+    color: #FFF;
+    margin-bottom: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 16px 64px;
+    background-color: #Fd7f15;
+  }
+}
+
+.categories-container {
+  margin-bottom: 112px;
+}
+
+.recipes-container {
+  display: block;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  button {
+    padding: 16px 48px;
+    background-color: #FFF;
+    color: #000;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    /* Ödev-1 Button'u ortalamak */
+  }
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+
+.recipe-card {
+  max-width: 260px;
+}
+
+.call-to-action-container {
+  display: block;
+  background-image: url('/assets/img/c2a-bg.png');
+  background-repeat: no-repeat;
+
+  text-align: center;
+  padding-block: 96px;
+
+  h2 {
+    font-size: 40px;
+    color: #FFF;
+    margin-bottom: 16px;
+  }
+}
+
+.c2a-input {
+  display: flex;
+  justify-content: center;
+
+  input {
+    padding: 12px 16px;
+    border: 1px solid #c4c4c4;
+
+    /* input'un width'i calc ile ayarlanacak */
+  }
+
+  span {
+    background-color: #Fd7f15;
+    padding: 19.57px 25.33px;
+  }
+}
